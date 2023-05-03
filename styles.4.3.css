@@ -36,6 +36,7 @@ button {
 .form {
     width: 100%;
 }
+
 .search-field {
     font-size: 30px;
     font-weight: 600;
@@ -139,7 +140,6 @@ button {
     border-radius: 50%;
     background-color: rgb(41, 176, 218);
     cursor: pointer;
-    
 } 
 
 .selectedRepo-button::before {
