@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(215, 242, 247);
+}
+
+button {
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: rgb(201, 212, 223);
+    min-height: 300px;
+    border: 5px solid white;
+    outline: 3px solid rgb(105, 199, 228);
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 15px rgb(107, 141, 173);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container-repo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.form {
+    width: 100%;
+}
+.search-field {
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    color: lightslategrey;
+}
+
+.search-field:focus {
+   outline: none;
+}
+
+.search-field::placeholder{
+    font-size: 18px;
+    color: rgb(201, 201, 201);
+}
+
+.autoComplete {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(102, 129, 170);
+    box-sizing: border-box;
+}
+
+.autoComplete-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px rgb(26, 79, 114);
+    box-sizing: border-box;
+    cursor: pointer;
+    min-height: 30px;
+    overflow-x: hidden;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.autoComplete-item:hover {
+    background-color: rgb(105, 199, 228);
+    transition: 0.3s;
+}
+
+.autoComplete-item:active {
+    background-color: rgb(78, 155, 179);
+    transition: 0.3s;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(99, 161, 192); 
+    box-shadow: 0 3px 15px rgb(107, 141, 173);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    min-height: 50px;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.hidden {
+    display: none
+}
+
+.selectedRepo {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(132, 225, 253); 
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 15px;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.selectedRepo-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    max-width: 220px;
+}
+
+.selectedRepo-button {
+    position: relative;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(41, 176, 218);
+    cursor: pointer;
+    
+} 
+
+.selectedRepo-button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.selectedRepo-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+.selectedRepo-button:hover {
+    background-color: rgb(35, 151, 187);
+    transition: 0.3s;
+}
