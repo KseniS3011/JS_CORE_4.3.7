@@ -1,1 +1,1 @@
-<h1>Gh pages: <a href="https://ksenis3011.github.io/JS_CORE_4.3.7/">Посмотреть на GitHub Pages</h1>
+<h1><a href="https://ksenis3011.github.io/JS_CORE_4.3.7/">Посмотреть на GitHub Pages</h1>
